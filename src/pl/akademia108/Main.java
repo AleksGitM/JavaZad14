@@ -11,8 +11,10 @@ public class Main {
 
         Manager manager = new Manager("John", "Kowalski", "CEO", 65129.69, true);
 
-        manager.giveRise(manager, 500.46);
+        manager.giveRise(employee, 500.46);
 
         System.out.println("Salary: " + employee.getSalary());
+
+
     }
 }

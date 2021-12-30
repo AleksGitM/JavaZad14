@@ -14,9 +14,9 @@ public class Manager extends Employee {
         super(name, surname, position, salary);
         this.isCEO = isCEO;
     }
-        public void giveRise(Object Employee, Double rise){
+        public void giveRise(Employee employee, Double rise){
             if(this.isCEO){
-                setSalary(this.getSalary() + this.rise);
+                employee.setSalary(employee.getSalary() + rise);
             } else {
                 System.out.println("Nie mogę dać podwyżki");
             }
